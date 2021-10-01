@@ -1,5 +1,6 @@
 # Curso de Fundamentos de Bases de Datos
 Conservación de la información al paso de tiempo.
+
 1.-Historia de la persistencia de la información
 ================================================
 - Estructura de los sumerios, tallados en piedra y arcilla
@@ -90,6 +91,7 @@ Las Reglas y mandamientos de Edgar Frank Ted Codd
     a) La base de datos no permitirá que exista un lenguaje o forma de acceso, que permita saltarse las reglas anteriores
 
 3.-Entidades y atributos
+========================
 Una entidad es algo similar a un objeto (programación orientada a objetos) y representa algo en el mundo real, incluso algo abstracto. Tienen atributos que son las cosas que los hacen ser una entidad y por convención se ponen en plural.
 
 Los atributos compuestos son aquellos que tienen atributos ellos mismos.
@@ -107,10 +109,13 @@ Entidades débiles: no pueden existir sin una entidad fuerte y se representan co
     Identidades débiles por existencia: se les asigna una clave propia.
 
 4.-Proyecto de PlatziBlog
+=========================
 Nuestro proyecto será un manejador de Blogpost. Es un contexto familiar y nos representará retos muy interesantes.
 
     Primer paso: Identificar las entidades
     Segundo paso: Pensar en los atributos
+
+![alt text](https://static.platzi.com/media/user_upload/Captura2-8c5455ae-05a4-48bf-8e40-e9f053156c7e.jpg)
 
 5.-Relaciones
 Las relaciones nos permiten ligar o unir nuestras diferentes entidades y se representan con rombos. Por convención se definen a través de verbos.
@@ -130,3 +135,21 @@ Cardinalidad
 
 Es una propiedad de las relaciones que indica la cantidad y correspondencia con la que puede estar relacionada una entidad y puede ser uno a uno, uno a varios, varios a uno y varios a varios.
 ![alt text](https://lh6.googleusercontent.com/proxy/BWwfVeHWLGIMExCLh91GUCnq5-0TX2ay5RelZwRBj5Ku4u90DmqKv_V3WmZ_0IOR-moNHKuNPb-6qccSaOzTJgENwMl5SdjmJO0AxRfx1v1TmtJPXWK95dj3v2C5Tst9b73kZ6JGHiEAhnUhNQiY=w1200-h630-p-k-no-nu)
+
+Muchos a Muchos
+![alt text](https://static.platzi.com/media/user_upload/cardinalidad%20n%20a%20n-e8130a46-dd22-41a6-90e9-e737d2c3b4a1.jpg)
+
+Diagrama ER
+Un diagrama es como un mapa y nos ayuda a entender cuáles son las entidades con las que vamos a trabajar, cuáles son sus relaciones y qué papel van a jugar en las aplicaciones de la base de datos.
+
+
+
+    Cada Usuario escribe múltiples Posts, pero un Post esta escrito por un solo usuario.
+
+    Cada Usuario escribe múltiples Comentarios, pero un Comentario esta escrito por un Usuario.
+
+    Un Post tiene una Categoría, pero una Categoría tiene múltiples Post.
+
+    Un Post tiene múltiples Etiquetas, pero una Etiquetas tiene múltiples Post.
+
+![alt text](https://static.platzi.com/media/user_upload/diagrama-entidad-relacion-7be03b35-a5d8-496e-bd15-eac81f18bbe6.jpg)
